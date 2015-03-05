@@ -4,7 +4,16 @@ Parts of this may be more detailed than you need. The mailmerge part of this was
 This assumes you have loose leaf copier paper such as [Rite in the Rain LL851](http://www.riteintherain.com/inventoryD.asp?item_no=LL8511) with each sheet having two 4 5/8 in x 7 in pre-perforated loose leaf sheets (or something similar), QGIS, Microsoft Office, and geospatial data.
 
 #### Spatiallite database, osm.pbf file, styling
-_to be added_
+
+original [source](http://anitagraser.com/2014/05/31/a-guide-to-googlemaps-like-maps-with-osm-in-qgis/) for some of the process
+
+```
+ogr2ogr -f "SQLite" -dsco SPATIALITE=YES -spat {western long} {southern lat} {eastern long} {nothern lat} {output filename}.db {input file name}.osm.pbf
+```
+- *.qml style files are in [AmericanRedCross/qgis-styles](https://github.com/AmericanRedCross/qgis-styles)
+- you may need coastline and a manually created "land" polygon (project background changed to blue, and land colored appropriately)
+
+
 
 #### Creation of an atlas grid in QGIS:
 - Create an AOI that can be used to build the grid
