@@ -1,31 +1,39 @@
 # Dhaka Data4Action
 
-- Available satellite imagery should be checked and if possible, missing buildings added.
-- Field Papers should be created and printed for the area of interest. Missing buildings should be added and mistakes in remotely traced buildings corrected.
-- All buildings in the targeted area need to be surveyed and appropriate tags added in OSM.
-- It may be easier to do the field work in two stages. A first stage to correct and finalize the building footprints. And a second stage, using the OpenMapKit app to survey the buildings and collect points of interest (shops inside buildings, etc.).
+## Workflow
+- Check satellite imagery for areas where buildings can be traced but are not yet included in OSM.
+- Conduct a field survey. (*It may be easier to do the field work in two stages. A first stage using only Field Papers to correct and finalize the building footprints. And a second stage, using both Field Papers to collect points of interest (shops inside buildings, etc.) and the OpenMapKit app to survey the buildings.*)
+  - Use the OpenMapKit app for existing buildings (contact the American Red Cross GIS team to setup the survey).
+  - Use Field Papers for errors and missing details such as:
+    - a feature traced as a single building should actually be multiple buildings
+    - a feature traced as multiple buildings should actually be a single building
+    - a building is missing
+    - a road is missing
+    - the points of shops and amenities
+- Upload completed OpenMapKit forms and work with the American Red Cross GIS team to add the data to OSM.
+- Use JOSM to create/upload data recorded on Field Papers.
+- Check the data in OSM for incorrect tagging, etc.
+
 
 ## Tagging
-In the below, the keys are formatted in bold and the options for the value are inside the { } brackets seperated by vertical lines. 
 
-- **building**
-  - { yes | construction | residential | commercial | industrial | mosque | hospital | school | public | mixed }
-- **building:use**
-  - Use this tag if building=mixed (multi-purpose) to provide additional detail. Type a semicolon separated list with no spaces (for example building:use=residential;commercial).
-  - { residential | commercial | industrial | place_of_worship | education | government }
-- **building:levels**
-  - Number of floors. When the top floor(s) are smaller than the street-level building footprint use your best judgement when deciding whether to count. Are they part of the structure or secondary additions? Are they close to the same area or only a small portion?
-- **name**
+- key is **building**
+  - values are { yes | construction | residential | commercial | industrial | mosque | hospital | school | public }
+- key is **building:use** >> *Use this tag if building=mixed (multi-purpose) to provide additional detail. Type a semicolon separated list with no spaces (for example building:use=residential;commercial).*
+  - values are { residential | commercial | industrial | place_of_worship | education | government }
+- **building:levels** >> *Number of floors. When the top floor(s) are smaller than the street-level building footprint use your best judgement when deciding whether to count. Are they part of the structure or secondary additions? Are they close to the same area or only a small portion?*
+  - value should be an integer number { 1 | 2 | 3 | ... }
+- key is **building:condition**
+  - values are { poor | average | good }  
+- key is **name**
   - If the building has a posted name you can include it.
-- **addr:housenumber**
+- key is **addr:housenumber**
   - Holding number. Capitalize all letters.
-- **addr:street**
+- key is **addr:street**
   - Don't abbreviate (for example, use "Road" and "Lane" NOT "Rd" and "Ln").
   - Use title case. Capitalize the first letter of each word.
-- **building:condition**
-  - { poor | average | good }  
 
-Note:If a building has only a single use, the following tags can be used on the building polygon. Otherwise, these tags should be used on points added inside the outline of the building.
+Note: If a building has only a single use, the following tags can be used on the building polygon. Otherwise, these tags should be used on points added inside the outline of the building.
 
 - **amenity**
   - { atm	| bank	| cafe	| clinic	| college	| community_centre	| dentist	| doctors	| fast_food	| hospital	| library	| pharmacy	| place_of_worship	| police	| post_office	| recycling	| restaurant	| school }
