@@ -2,7 +2,7 @@
 
 ## Workflow
 - Check satellite imagery for areas where buildings can be traced but are not yet included in OSM.
-- Conduct a field survey. (*It may be easier to do the field work in two stages. A first stage using only Field Papers to correct and finalize the building footprints. And a second stage, using both Field Papers to collect points of interest (shops inside buildings, etc.) and the OpenMapKit app to survey the buildings.*)
+- Conduct a field survey. (*It may be easier to do the field work in two stages. A first stage using only Field Papers to correct and finalize the building footprints. And a second stage, using both Field Papers to collect points of interest such as shops inside buildings and the OpenMapKit app to survey all buildings.*)
   - Use the OpenMapKit app for existing buildings (contact the American Red Cross GIS team to setup the survey).
   - Use Field Papers for errors and missing details such as:
     - a feature traced as a single building should actually be multiple buildings
@@ -35,45 +35,44 @@
 
 Note: If a building has only a single use, the following tags can be used on the building polygon. Otherwise, these tags should be used on points added inside the outline of the building.
 
-- **amenity**
-  - { atm	| bank	| cafe	| clinic	| college	| community_centre	| dentist	| doctors	| fast_food	| hospital	| library	| pharmacy	| place_of_worship	| police	| post_office	| recycling	| restaurant	| school }
-- **shop**
-  - *Many times should be a node placed inside a building polygon*
-  -	convenience *(small subset of items you would find in a supermarket)*
-  -	general *(assorted items, if it sells food use shop=convenience)*
-  -	farm *(shop or roadside stand focused on selling freshly harvested farm produce)*
-  -	bakery *(bread)*
-  -	butcher *(meat)*
-  -	confectionery *(sweets or candy)*
-  -	pastry *(baked sweets like cakes, biscuits, pies)*
-  -	clothes
-  -	fabric
-  -	jewelry
-  -	leather
-  -	shoes
-  -	tailor
-  -	chemist *(personal hygiene, cosmetics, household cleaning supplies, drugs. For prescription drugs use amenity=pharmacy)*
-  -	hairdresser
-  -	hardware *(building supplies like nails, screws, paint, etc)*
-  -	paint
-  -	trade *(building supplies like timber/wood, cement, etc)*
-  -	houseware *(pots, pans, kitchenware, small appliances)*
-  -	bed *(mattresses and other bedding products)*
-  -	furniture
-  -	electronics
-  -	copyshop *(photocopying, printing services)*
-  -	computer *(electronics shop selling only computers)*
-  -	mobile_phone *(electronics shop selling only mobile phones and accessories)*
-  -	mobile_recharge
-  -	bicycle
-  -	car
-  -	car_repair
-  -	car_parts *(selling auto parts, auto accessories, motor oil, car chemicals, etc)*
-  -	books
-  -	gifts *(selling gifts, greeting cards, tourist gifts, souvenirs)*
-  -	stationery *(paper, office supplies)*
-  -	funeral_directors *(providing services related to funeral arrangements)*
-  -	musical_instrument
+- key is **amenity**
+  - values are { atm	| bank	| cafe	| clinic	| college	| community_centre	| dentist	| doctors	| fast_food	| hospital	| library	| pharmacy	| place_of_worship	| police	| post_office	| recycling	| restaurant	| school }
+- key is **shop** and values are...
+  -	{ convenience } *(small subset of items you would find in a supermarket)*
+  -	{ general } *(assorted items, if it sells food use shop=convenience)*
+  -	{ farm } *(shop or roadside stand focused on selling freshly harvested farm produce)*
+  -	{ bakery } *(bread)*
+  -	{ butcher } *(meat)*
+  -	{ confectionery } *(sweets or candy)*
+  -	{ pastry } *(baked sweets like cakes, biscuits, pies)*
+  -	{ clothes }
+  -	{ fabric }
+  -	{ jewelry }
+  -	{ leather }
+  -	{ shoes }
+  -	{ tailor }
+  -	{ chemist } *(personal hygiene, cosmetics, household cleaning supplies, drugs. For prescription drugs use amenity=pharmacy)*
+  -	{ hairdresser }
+  -	{ hardware } *(building supplies like nails, screws, paint, etc)*
+  -	{ paint }
+  -	{ trade } *(building supplies like timber/wood, cement, etc)*
+  -	{ houseware } *(pots, pans, kitchenware, small appliances)*
+  -	{ bed } *(mattresses and other bedding products)*
+  -	{ furniture }
+  -	{ electronics }
+  -	{ copyshop } *(photocopying, printing services)*
+  -	{ computer } *(electronics shop selling only computers)*
+  -	{ mobile_phone } *(electronics shop selling only mobile phones and accessories)*
+  -	{ mobile_recharge }
+  -	{ bicycle }
+  -	{ car }
+  -	{ car_repair }
+  -	{ car_parts } *(selling auto parts, auto accessories, motor oil, car chemicals, etc)*
+  -	{ books }
+  -	{ gifts } *(selling gifts, greeting cards, tourist gifts, souvenirs)*
+  -	{ stationery } *(paper, office supplies)*
+  -	{ funeral_directors } *(providing services related to funeral arrangements)*
+  -	{ musical_instrument }
 
 ## Additional tagging notes
 
