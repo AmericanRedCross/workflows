@@ -1,8 +1,12 @@
 # Dhaka Data4Action
 
-## Tagging
+- Available satellite imagery should be checked and if possible, missing buildings added.
+- Field Papers should be created and printed for the area of interest. Missing buildings should be added and mistakes in remotely traced buildings corrected.
+- All buildings in the targeted area need to be surveyed and appropriate tags added in OSM.
+- It may be easier to do the field work in two stages. A first stage to correct and finalize the building footprints. And a second stage, using the OpenMapKit app to survey the buildings and collect points of interest (shops inside buildings, etc.).
 
-All buildings be surveyed and tagged in OSM. In the below, the keys are formatted in bold and the options for the value are inside the { } brackets seperated by vertical lines. 
+## Tagging
+In the below, the keys are formatted in bold and the options for the value are inside the { } brackets seperated by vertical lines. 
 
 - **building**
   - { yes | construction | residential | commercial | industrial | mosque | hospital | school | public | mixed }
