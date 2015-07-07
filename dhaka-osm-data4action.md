@@ -2,26 +2,29 @@
 
 ## Tagging
 
+All buildings be surveyed and tagged in OSM. In the below, the keys are formatted in bold and the options for the value are inside the { } brackets seperated by vertical lines. 
+
 - **building**
-  - { yes | construction | residential | commercial | industrial | mosque | hospital | school | public }
+  - { yes | construction | residential | commercial | industrial | mosque | hospital | school | public | mixed }
 - **building:use**
-  - *Use this tag if the building is multipurpose/mixed.*
+  - Use this tag if building=mixed (multi-purpose) to provide additional detail. Type a semicolon separated list with no spaces (for example building:use=residential;commercial).
   - { residential | commercial | industrial | place_of_worship | education | government }
-  - *Type a semicolon separated list with no spaces (for example building:use=residential;commercial).*
 - **building:levels**
-  - *Number of floors. When the top floor(s) are smaller than the street-level building footprint use your best judgement when deciding whether to count. Are they part of the structure or secondary additions? Are they close to the same area or only a small portion?*
+  - Number of floors. When the top floor(s) are smaller than the street-level building footprint use your best judgement when deciding whether to count. Are they part of the structure or secondary additions? Are they close to the same area or only a small portion?
 - **name**
-  - *If the building has a posted name you can include it.*
+  - If the building has a posted name you can include it.
 - **addr:housenumber**
-  - *Holding number. Capitalize all letters.*
+  - Holding number. Capitalize all letters.
 - **addr:street**
-  - *Don't abbreviate (for example, use "Road" and "Lane" NOT "Rd" and "Ln").*
-  - *Use title case. Capitalize the first letter of each word.*
+  - Don't abbreviate (for example, use "Road" and "Lane" NOT "Rd" and "Ln").
+  - Use title case. Capitalize the first letter of each word.
 - **building:condition**
   - { poor | average | good }  
+
+Note:If a building has only a single use, the following tags can be used on the building polygon. Otherwise, these tags should be used on points added inside the outline of the building.
+
 - **amenity**
   - { atm	| bank	| cafe	| clinic	| college	| community_centre	| dentist	| doctors	| fast_food	| hospital	| library	| pharmacy	| place_of_worship	| police	| post_office	| recycling	| restaurant	| school }
-
 - **shop**
   - *Many times should be a node placed inside a building polygon*
   -	convenience *(small subset of items you would find in a supermarket)*
