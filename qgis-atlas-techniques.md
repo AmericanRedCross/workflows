@@ -58,7 +58,7 @@ CASE WHEN intersects($atlasgeometry,GeomFromWKT("centroid")) THEN "YOUR_LABEL_FI
 
 ### Creating an inset
 
-Once you've set up your atlas you can create an inset that reflecs the current atlas feature. 
+Once you've set up your atlas you can create an inset that reflects the current atlas feature. 
 You can do many things with this inset. You can draw a box around the atlas map area on an inset map. You can style the inset map so the current atlas feature is highlighted.
 
 1. Load the shapefiles for all the features you want to include in your inset. Make sure to include the atlas shapefile (from #1 above)
