@@ -1,6 +1,7 @@
 # Dhaka Data4Action
 
 ## Workflow
+
 - Check satellite imagery for areas where buildings can be traced but are not yet included in OSM.
 - Conduct a field survey. (*It may be easier to do the field work in two stages. A first stage using only Field Papers to correct and finalize the building footprints. And a second stage, using both Field Papers to collect points of interest such as shops inside buildings and the OpenMapKit app to survey all buildings.*)
   - Use the OpenMapKit app for existing buildings (contact the American Red Cross GIS team to setup the survey).
@@ -19,8 +20,15 @@
 
 - key is **building**
   - values are { yes | construction | residential | commercial | industrial | mosque | hospital | school | public }
-- key is **building:use** >> *Use this tag if building=mixed (multi-purpose) to provide additional detail. Type a semicolon separated list with no spaces (for example building:use=residential;commercial).*
+- key is **building:use** >> *Use this tag combined with building=yes when the building is multi-purpose to provide additional detail. Type a semicolon separated list with no spaces (for example building:use=residential;commercial).*
   - values are { residential | commercial | industrial | place_of_worship | education | government }
+  - how to add this tag?
+    - this type of tag is not easily supported (there is no select multiple option, and there are something like 57 different possible cominations of teh 6 values)
+    - we will include a question as part of the ODK part of the survey (where select multiple is supported) and use the osm way id to join the value lists later in a GIS before upload to OSM
+  - why tag like this?
+    - looking at taginfo there are less than 100 times features are tagged building=mixed or =mixed_use or =multipurpose
+    - the **building:use** key is used more than 600,000 times
+    - a semicolon-separated list for the value is less common but there are still 15,000+ building:use=residential;industrial and 2,700+ building:use=residential;commercial
 - **building:levels** >> *Number of floors. When the top floor(s) are smaller than the street-level building footprint use your best judgement when deciding whether to count. Are they part of the structure or secondary additions? Are they close to the same area or only a small portion?*
   - value should be an integer number { 1 | 2 | 3 | ... }
 - key is **building:condition**
