@@ -46,9 +46,9 @@
 ![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-08.png)
 
 **checking the map on a Garmin GPSMAP64**  
-![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-09.png)
-![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-10.png)
-![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-11.png)
-![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-12.png)
-![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-13.png)
-![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-14.png)
+![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-09.jpg)
+![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-10.jpg)
+![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-11.jpg)
+![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-12.jpg)
+![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-13.jpg)
+![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-14.jpg)
