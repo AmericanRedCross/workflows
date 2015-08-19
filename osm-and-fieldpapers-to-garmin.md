@@ -1,13 +1,13 @@
 ### OSM base map and Field Papers bounding boxes on a Garmin GPS
 
 - install QGIS
-- install QGIS plugins: GarminCustomMap, OpenLayers Plugin
+- install QGIS plugins: GarminCustomMap, QuickMapsServices Plugin
 - create the Field Papers atlas for your survey area
 - after the atlas is generated from the overview/download page, from the *Export Data* options download a GeoJSON
 - open QGIS,load the atlas GeoJSON with Add Vector Layer and style it with no fill and a wide stroke in a contrasting color
-- add the OSM basemap through the OpenLayers Plugin (accessible through the Web dropdown menu)
+- add the OSM basemap through the QuickMapsServices Plugin (accessible through the Web dropdown menu)
 - make sure the QGIS window and map pane are as large as possible
-- right click the GeoJSON layer, Zoom to Layer (if the atlas covers a small area you might need to zoom out some for the OSM base map to display) and adjust map extent to fit the AOI
+- right click the GeoJSON layer, Zoom to Layer and adjust map extent to fit the AOI
 - from the Project dropdown menu choose Save as Image... and save as type: _TIF format (*.tif *.TIF)_
 - add the TIF back into the map with Add Raster Layer
   - when it prompts for a coordinate system select WGS 84 / Pseudo Mercator, EPSG:3857
