@@ -24,9 +24,6 @@
 **export GeoJSON from Field Papers**  
 ![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-01.png)
 
-**OpenLayers Plugin**  
-![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-02.png)
-
 **ready to Save as Image...**  
 ![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/osm-and-fieldpapers-to-garmin/osm-fp-garmin-03.png)
 
