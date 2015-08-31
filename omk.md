@@ -1,9 +1,21 @@
 ## OpenMapKit (OMK)
 https://github.com/americanredcross/openmapkit/wiki
 
+### What OMK does well, what it doesn't do
+- buildings and roads
+- currently no creation of new features
+  - features need to be pre-traced
+- currently doesn't handle points
+  - one of the next features to be added will be the ability to create new points
+- dense areas are tough
+  - decreased GPS accuracy
+  - requires greater map literacy
+
 ### Creating the survey
 - XLSForm syntax: basic
+  - http://xlsform.org/
 - XLSForm syntax: adding the OpenMapKit question type
+  - https://github.com/AmericanRedCross/OpenMapKit/wiki/OpenDataKit-Forms-for-OpenMapKit
 - form design: OSM tags, caveats, tips & tricks, current limitations
 
 ### Setting up the app
@@ -14,7 +26,7 @@ https://github.com/americanredcross/openmapkit/wiki
     - you may need to change the security settings on the phone to allow installation of apps from unknown sources
     - do not update ODK Collect
 
-## Setting up the cloud-based data repository
+### Setting up the cloud-based data repository
 - set up an account on [ONA](https://ona.io/)
   - there is a free account level
   - soon will have the code and instructions up on formhub to run your own server instance
