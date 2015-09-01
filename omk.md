@@ -11,18 +11,26 @@ https://github.com/americanredcross/openmapkit/wiki
   - decreased GPS accuracy
   - requires greater map literacy
 
+
 ### Creating the survey
 - XLSForm syntax: basic
   - http://xlsform.org/
 - XLSForm syntax: adding the OpenMapKit question type
   - https://github.com/AmericanRedCross/OpenMapKit/wiki/OpenDataKit-Forms-for-OpenMapKit
-- form design: OSM tags, caveats, tips & tricks, current limitations
+- form design: OSM tags, caveats, tips & tricks
+  - if a key is part of the survey and a feature has a pre-exisiting value that is not included in the options list, then that value will not display in the question interface
+  - use [taginfo](https://taginfo.openstreetmap.org) to research if keys/values are commonly used
+  - don't include the same tags on two objects. [One feature, one osm element](http://wiki.openstreetmap.org/wiki/One_feature,_one_OSM_element)
+  - when providing name=* for a highway or addr:street=* for a building
+    - don't abbreviate (for example, use "Road" and "Lane" NOT "Rd" and "Ln")
+    - use title case, capitalize the first letter of each word
 
 ### Setting up the app
 - install ODK Collect and OpenMapKit on a phone
   - the next version of ODK when published to the Google Play Store should include all necessary functionality but for now you will need to use the APK files downloadable from the [wiki](https://github.com/AmericanRedCross/OpenMapKit/wiki/Downloads)
     - download directly to you phone or copy both files over from your computer
     - use the phone's file browser to open the files to install
+    - you may need to install a file browser such as ES File Explorer File Manager
     - you may need to change the security settings on the phone to allow installation of apps from unknown sources
     - do not update ODK Collect
 
@@ -61,9 +69,10 @@ https://github.com/americanredcross/openmapkit/wiki
   - copy the files into the respective folders
 
 ### Separation of ODK and OMK data
+- some data doesn't belong in OSM, but you can still collect it with this workflow
 
 ### Field survey methods (e.g. integration of Field Papers and OMK)
 - OMK is a useful option when collecting many details about each feature such as building type, name, number, material, and condition
-- Field papers are used to collect other data including major landmarks, water sources, sanitation points and corrections to the traced base map
+- [Field papers](http://fieldpapers.org) are used to collect other data including major landmarks, water sources, sanitation points and corrections to the traced base map
 - Field papers are also useful for collecting specific data each community deems priority such as landslides, flood prone areas, informal dumpsites (can include sensitive data that does not need to go into OSM)
 - the map on the phone used for the OMK matches the map on the field paper, which helps users with orientation and collecting accurate data
