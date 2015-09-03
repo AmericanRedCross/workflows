@@ -73,6 +73,9 @@ https://github.com/americanredcross/openmapkit/wiki
 
 ### Field survey methods (e.g. integration of Field Papers and OMK)
 - OMK is a useful option when collecting many details about each feature such as building type, name, number, material, and condition
-- [Field papers](http://fieldpapers.org) are used to collect other data including major landmarks, water sources, sanitation points and corrections to the traced base map
+- [Field papers](http://fieldpapers.org/) are used to collect other data including major landmarks, water sources, sanitation points and corrections to the traced base map
 - Field papers are also useful for collecting specific data each community deems priority such as landslides, flood prone areas, informal dumpsites (can include sensitive data that does not need to go into OSM)
 - the map on the phone used for the OMK matches the map on the field paper, which helps users with orientation and collecting accurate data
+
+
+>>> info on purge
