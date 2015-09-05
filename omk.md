@@ -69,7 +69,7 @@ https://github.com/americanredcross/openmapkit/wiki
   - copy the files into the respective folders
 
 ### Separation of ODK and OMK data
-- some data doesn't belong in OSM, but you can still collect it with this workflow
+- some data doesn't belong in OSM, but you can still collect it with this workflow, just include them as questions on the 'survey' tab of your form workbook and not in the lists on the 'osm' tab
 
 ### Field survey methods (e.g. integration of Field Papers and OMK)
 - OMK is a useful option when collecting many details about each feature such as building type, name, number, material, and condition
@@ -78,4 +78,10 @@ https://github.com/americanredcross/openmapkit/wiki
 - the map on the phone used for the OMK matches the map on the field paper, which helps users with orientation and collecting accurate data
 
 
->>> info on purge
+### Retrieving the collected data
+- the survey data can be downloaded as a spreadsheet (\*.csv or \*.xls)
+  - it will not include any tag data entered via OpenMapKit
+  - it will contain a column with the OSM way IDs, and you can use this to spatially join the survey data to features downloaded from OSM and loaded into a GIS software
+- the OpenMapKit data can be downloaded as an \*.osm file
+  - quality control and validation should be carried out in JOSM before uploading the changes to OSM
+  - if the data contains features with changed tags that you do *not* want to upload to OSM, you will need to turn on 'Expert mode' in the preferences of JOSM and then use the 'Purge...' command from the main menu Edit dropdown (this will leave the buildings on the server as is, if you delete them from your OpenMapKit \*.osm file it will delete them from the server, read more about [purge](https://josm.openstreetmap.de/wiki/Help/Action/Purge) on the JOSM wiki)
