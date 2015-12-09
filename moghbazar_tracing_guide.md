@@ -14,5 +14,4 @@ The November imagery is a little bit more clear but both imagery sources should 
 
 2. When tracing around tall buildings, switch between the two scenes. The direction of off-nadir is opposite, so shorter adjacent buildings that are hidden in one scene will be visible in the other.
 
-![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/moghbazar-tracing-guide/dhaka-22mar2015.png)
-![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/moghbazar-tracing-guide/dhaka-07nov2015.png)
+![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/moghbazar-tracing-guide/off-nadir-compare.png) 
