@@ -8,7 +8,7 @@ For this [task](http://tasks.hotosm.org/project/1391) tracing in Dhaka, Banglade
 
 The November imagery is a little bit more clear but both imagery sources should be used. Both are off-nadir (captured at an angle instead of directly overhead resulting in the slightly offset appearance in which you can see the sides of buildings). It is important to:
 
-- Trace the building use the outline of the roof and then shift the feature to line up with the ground-level footprint of the building.
+- Trace the building using the outline of the roof and then shift the feature to line up with the ground-level footprint of the building.
 
 ![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/moghbazar-tracing-guide/off-nadir-correction.png)
 
