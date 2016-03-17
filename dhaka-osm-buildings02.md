@@ -3,7 +3,7 @@
 
 - Let's trace the building in the center of the image.
 
-![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/dhaka-osm-buildings01/dhaka-osm-buildings02-a.png)
+![](https://raw.githubusercontent.com/AmericanRedCross/workflows/master/images/dhaka-osm-buildings02/dhaka-osm-buildings02-a.png)
 
 - We might trace it like this. But go back and take a closer look at the imagery. This isn't four buildings, only one!
 
