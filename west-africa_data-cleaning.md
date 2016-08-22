@@ -1,6 +1,6 @@
 # West Africa OMK Data-Cleaning Tutorial
 
-## Before we start
+# Before we start
 
 So you've mapped over 5,000 communities in West Africa, that's pretty cool! But now, we have all of this data to clean, so that it can be used by people and organizations working in your communities. 
 
@@ -9,12 +9,12 @@ Please familiarize yourself with the [osmwiki](http://wiki.openstreetmap.org/wik
 Your months of work in the border areas of Liberia, Guinea, and Sierra Leone have provided critical map data, which would otherwise not be available had it not been for the tireless efforts of the volunteers who visited all of these communities. This data will be crucial in the event of a disaster or epidemic.
 
 
-### Things to Download
+## Things to Download
 [JOSM](https://josm.openstreetmap.de/download/josm.jnlp)
 
 [OpenRefine](http://openrefine.org/) - To Use in browser: 127.0.0.1:3333
 
-### Resources We Will Use
+## Resources We Will Use
 ToDo List Plugin
 
 OpenData Plugin
@@ -23,28 +23,28 @@ OpenData Plugin
 
 [geojson.io](http://geojson.io)
 
-## Table of Contents
+# Table of Contents
 1. [List of Data to Clean](##list-of-data)
 
-2. [Pre Cleaning](##pre-cleaning)
+2. [Pre Cleaning](#pre-cleaning)
 
-3. [Initial Purging](##initial-purging)
+3. [Initial Purging](#initial-purging)
 
-4. [Cleaning New Points](##cleaning-new-points)
+4. [Cleaning New Points](#cleaning-new-points)
 
-5. [Cleaning Existing Polygons](##cleaning-existing-polygons)
+5. [Cleaning Existing Polygons](#cleaning-existing-polygons)
 
-6. [Cleaning Placeholders](##cleaning-placeholders)
+6. [Cleaning Placeholders](#cleaning-placeholders)
 
-7. [Source](##important)
+7. [Source](#important)
 
-8. [Uploading](##uploading)
+8. [Uploading](#uploading)
 
-9. [Afterward](##afterward)
+9. [Afterward](#afterward)
 
-## List of Data
+# List of Data
 
-### Liberia (NHQ to clean and upload)
+## Liberia (NHQ to clean and upload)
 
 * ~~Liberia_Community_survey_v18 (1st Round)~~
 * Liberia_Community_survey_v18 (2nd Round)
@@ -56,7 +56,7 @@ OpenData Plugin
 * Schools
 * Water Points Africa
 
-### Sierra Leone (Mapping Hub to clean and upload)
+## Sierra Leone (Mapping Hub to clean and upload)
 
 * Africa Health Facilities (Purge Liberia data)
 * SL Building Placeholders
@@ -66,7 +66,7 @@ OpenData Plugin
 * SL Schools
 * SL Water Points
 
-### Guinea (Mapping Hub to clean and upload)
+## Guinea (Mapping Hub to clean and upload)
 
 * French buildings v1
 * French Building Placeholders v1
@@ -76,7 +76,7 @@ OpenData Plugin
 * French Schools v1
 * French Water Points Africa v2
 
-## Pre-Cleaning
+# Pre-Cleaning
 
 Create folder structure to organize data
 raw
@@ -91,7 +91,7 @@ Download Data from [omkserver.com](omkserver.com)
 Install ToDo List Plugin, OpenData Plugin
 
 
-## Initial Purging
+# Initial Purging
 
 Open JOSM
 Install To-Do List Plugin
@@ -107,7 +107,7 @@ If you want to only focus on a small geographical region of the data, purge ever
 Right-click, save to your working folder and name it relevant to the dataset, adding a "_1" to the end of the file name. Each iteration of your file will be a new version of your data, so you know that you are working with the most current version. 
 
 
-### Points vs Polygons?
+## Points vs Polygons?
 
 _Some layers have both points and polygons, we want to separate the points and the polygons as they have to be uploaded separately._ 
 
@@ -117,7 +117,7 @@ Select `File>New Layer` to add a new layer that we will be using for the polgons
 
 Press CTRL+F to bring up the search box. Type `type=way`, and Start Search. This will select all the polygons. Press `CTRL+C` to copy the building polygons, then select your new layer, you'll know it is selected because the green check mark will move to that layer, and the data in your original layer will be greyed out. We will now paste the data here by pressing `ALT+CTRL+V`, this will ensure that the data gets pasted in its original position. 
 
-## Cleaning New Points
+# Cleaning New Points
 
 Open your browser and go to geojson.io, select "Open" and open your "feature_1.osm" file in the window. Then select `Save>CSV`
 
@@ -175,7 +175,7 @@ We will now examine each individiual point to ensure that it is in the correct l
 
 [Ready To Upload](##important)
 
-## Cleaning Existing Polygons
+# Cleaning Existing Polygons
 
 _In this section we will cover the cleaning of building data where the buildings already exist in OpenStreetMap, and we want to preserve their version histories._
 
@@ -191,7 +191,7 @@ We want to go through each value to make sure we have no spelling errors, or mis
 
 [Ready To Upload](##important)
 
-## Cleaning Placeholders
+# Cleaning Placeholders
 
 Follow the OpenRefine steps for [Cleaning New Points](##cleaning-new-points).
 
@@ -209,13 +209,13 @@ Copy and Paste key/value pairs from the cleaned .csv layer to your new data laye
 
 [Ready To Upload](##important)
 
-## IMPORTANT
+# IMPORTANT
 
 Add `source="Red Cross Field Survey"`
 
 Go through each individual entry in the data using the "ToDo List" plugin to ensure that each point being added has a main tag. `building=`, `amenity=`, `man_made=`
 
-## Uploading
+# Uploading
 
 Once everything has been standardized and you've gone through ever point in the to-do list, you can upload. Click the upload icon.
 
@@ -233,7 +233,7 @@ Data source, type in "Red Cross survey"
 
 When uploading there may be some data conflicts with current data. Address these on a case by case basis. Most of this should be addressed by purging the unecessary data in the beginning.
 
-## Afterward
+# Afterward
 
 Save your uploaded OSM file in your directory as a .osm file. All of which will be sent to NHQ.
 
