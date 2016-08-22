@@ -173,7 +173,7 @@ Press `CTRL+A` to select all of the points. Then on the to-do list window, press
 
 We will now examine each individiual point to ensure that it is in the correct location. Use bing imagery or OSM basemaps if possible.
 
-[Ready To Upload](##important)
+[Ready To Upload](#important)
 
 # Cleaning Existing Polygons
 
@@ -189,7 +189,7 @@ In the Tags/Memberships window, we will see each different key and value pair in
 
 We want to go through each value to make sure we have no spelling errors, or mis-entered data.
 
-[Ready To Upload](##important)
+[Ready To Upload](#important)
 
 # Cleaning Placeholders
 
@@ -207,7 +207,7 @@ Trace new buildings in your new data layer
 
 Copy and Paste key/value pairs from the cleaned .csv layer to your new data layer.
 
-[Ready To Upload](##important)
+[Ready To Upload](#important)
 
 # IMPORTANT
 
