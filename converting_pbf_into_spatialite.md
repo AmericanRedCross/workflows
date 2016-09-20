@@ -8,7 +8,7 @@ PBF files take up less space than other data formats, so they're quicker to down
 1. Make you have GDAL installed.
 2. Download a PBF file for the area you are looking for from Geofabrik: http://download.geofabrik.de/ or other source (e.g. activation wiki)
 3. Put the download somewhere accessible (suggestion: set up a consistent folder for all OSM extracts)
-4. Place your PBF file inside the folder
+4. Place your PBF file inside the folder. The file will download with an `.osm.pbf` extension. Manually change the text of the filename to delete the `.osm` part and just end with `.pbf`. Example: Download.osm.pbf -> Download.pbf
 5. Geofabrik normally gives you an entire country or other large area. Large amounts of data will be slow in GIS software. If you know you can crop the data to a more manageable size, and you won't need the rest later, then go and get your bounding box now. Useful website for bbox stuff: http://bboxfinder.com/#0.000000,0.000000,0.000000,0.000000
 
 ## Process
