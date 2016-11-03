@@ -22,6 +22,8 @@ This is less intuitive than it seems, so a few intro notes:
 
 5. The print composer, like the map itself, works with layers. Use this menu for selecting the item you want to work with and for changing the order of items.
 
+There's also an atlas creation tool - more on that on [this workflow page] (https://github.com/AmericanRedCross/workflows/blob/master/qgis-atlas-techniques.md).
+
 
 ## Getting the map on the page
 
