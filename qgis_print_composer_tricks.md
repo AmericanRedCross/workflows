@@ -76,12 +76,6 @@ There are a couple of useful features in here, like being able to turn off the a
 
 There are a couple of blocks with doing a legen in QGIS. If you've got complicated symbology (like a vector symbol inside of a polygon), then the sizing will be weird - the vector will probably be way too big for the polygon in the legend. You can't just make everything in the legend bigger, convert to graphics (because this isn't a feature in QGIS), and resize. You could get around this by going back into the map and resizing your vector fills (and then save the style so you don't have to do it again) but even then, I had issues where some vectors were offset just a little bit in the legend, for no apparent reason (I double checked everything):
 
-Vectors lined up on the map in the data view
-![] (https://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/legend1.png)
-
-But not lined up in the legend
-![] (https://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/legend2.png)
-
 ##Titles and drawing elements
 
 For finishing touches, QGIS can actually do a lot more than you'd expect.
