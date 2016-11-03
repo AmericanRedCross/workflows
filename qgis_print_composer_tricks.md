@@ -64,13 +64,13 @@ We noticed that if you close out of QGIS entirely, then come back to the print c
 
 Add the scale bar. There are a lot of ways you can style this using the "Item properties" menu. One downside: unlike ArcGIS, QGIS doesn't allow you to save a scale style, so you have to do this every time. I would appreciate it if someone would develop this feature.
 
-![] (https://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/scale.gif)
+![] (https://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/scale2.gif)
 
 ##Legend
 
 The same is true for the legend - you can do a lot of modifications to the default, but you can't save a default legend formatting and have to make these changes every single time. For that reason, I often find it faster to make a legend in Adobe Illustrator (or Gimp or Inkscape if you want a free version) and stick it on top of my finished map, but it can be done in QGIS:
 
-![] (https://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/legend.gif)
+![] (https://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/legend2.gif)
 
 There are a couple of useful features in here, like being able to turn off the auto-updating layers, and being able to lock certain aspects.
 
