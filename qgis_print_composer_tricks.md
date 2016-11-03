@@ -1,4 +1,4 @@
-### QGIS: Tips and tricks for the print composer
+# QGIS: Tips and tricks for the print composer
 
 We at the American Red Cross are committed to using (and improving) open source software whenever possible. We love QGIS, but the print composer can be pretty frustrating at first. After bashing our heads against the keyboard, we've come up with these tips and tricks to guide our new staff through the process.
 
@@ -18,11 +18,11 @@ This is less intuitive than it seems, so a few intro notes:
 
 3. (Orange) These menus on the right are critical for modifying any of the elements on your page. There's one for the composition itself, which you'll use to set up your canvas size, margins, number of pages, etc when you first open a new print composer window. There's another menu ("Item properties") for working with an element that you've selected. There are usually a ton of options and features buried in here.
 
-4. Scroll bar. You're going to do a lot of work in the Item Properties menu, and it'll often involve scrolling down. Using the scroll wheel on your mouse will be frustrating - try to use this scroll bar instead.
+4. (Yellow) Scroll bar. You're going to do a lot of work in the Item Properties menu, and it'll often involve scrolling down. Using the scroll wheel on your mouse will be frustrating - try to use this scroll bar instead.
 
-5. The print composer, like the map itself, works with layers. Use this menu for selecting the item you want to work with and for changing the order of items.
+5. (Pink) The print composer, like the map itself, works with layers. Use this menu for selecting the item you want to work with and for changing the order of items.
 
-There's also an atlas creation tool - more on that on [this workflow page] (https://github.com/AmericanRedCross/workflows/blob/master/qgis-atlas-techniques.md).
+6. (Green) There's also an atlas creation tool - more on that on [this workflow page] (https://github.com/AmericanRedCross/workflows/blob/master/qgis-atlas-techniques.md).
 
 
 ## Getting the map on the page
@@ -57,23 +57,22 @@ We noticed that if you close out of QGIS entirely, then come back to the print c
 
 ![] (http://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/recover.gif)
 
-## Page elements
 
-Once the map is set, it's just a matter of other elements: title, scale bar, legend, etc.
-
-#Scale bar
+##Scale bar
 
 Add the scale bar. There are a lot of ways you can style this using the "Item properties" menu. One downside: unlike ArcGIS, QGIS doesn't allow you to save a scale style, so you have to do this every time. I would appreciate it if someone would develop this feature.
 
 ![] (http://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/scale.gif)
 
-#Legend
+##Legend
 
 The same is true for the legend - you can do a lot of modifications to the default, but you can't save a default legend formatting and have to make these changes every single time. For that reason, I often find it faster to make a legend in Adobe Illustrator (or Gimp or Inkscape if you want a free version) and stick it on top of my finished map, but it can be done in QGIS:
 
 ![] (http://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/legend.gif)
 
-There are a couple of blocks with this. If you've got complicated symbology (like a vector symbol inside of a polygon), then the sizing will be weird - the vector will probably be way too big for the polygon in the legend. You can't just make everything in the legend bigger, convert to graphics (because this isn't a feature in QGIS), and resize. You could get around this by going back into the map and resizing your vector fills (and then save the style so you don't have to do it again) but even then, I had issues where some vectors were offset just a little bit in the legend, for no apparent reason (I double checked everything):
+There are a couple of useful features in here, like being able to turn off the auto-updating layers, and being able to lock certain aspects.
+
+There are a couple of blocks with doing a legen in QGIS. If you've got complicated symbology (like a vector symbol inside of a polygon), then the sizing will be weird - the vector will probably be way too big for the polygon in the legend. You can't just make everything in the legend bigger, convert to graphics (because this isn't a feature in QGIS), and resize. You could get around this by going back into the map and resizing your vector fills (and then save the style so you don't have to do it again) but even then, I had issues where some vectors were offset just a little bit in the legend, for no apparent reason (I double checked everything):
 
 Vectors lined up on the map in the data view
 ![] (http://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/legend1.png)
@@ -81,7 +80,7 @@ Vectors lined up on the map in the data view
 But not lined up in the legend
 ![] (http://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/legend2.png)
 
-#Titles and drawing elements
+##Titles and drawing elements
 
 For finishing touches, QGIS can actually do a lot more than you'd expect.
 
@@ -97,6 +96,13 @@ And there's the text feature:
 
 ![] (http://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/text.gif)
 
+##Output
+
+Save the print composer and export your map as a PNG or a PDF. Don't export it an SVG; you won't be happy.
+
+![] (http://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/save.gif)
+
+##The End
 
 From all of these tools, we've been able to make some pretty nice-looking maps with just QGIS:
 
