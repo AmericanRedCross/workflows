@@ -47,6 +47,8 @@ In case that doesn't make sense:
 
 There are a few ways you can do this. The best way to move the content of the map is by clicking the "pan" tool and then clicking and dragging the map. You can also zoom in this way by using the scroll wheel, but it's easier to go over to the "Item properties" menu and just alter the scale number - you get more flexibility this way.
 
+Tip: Click "View extent in map canvas" to make your data view mirror your print composer.
+
 ![] (https://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/zooms.gif)
 
 ## Save your print composer and come back to it
