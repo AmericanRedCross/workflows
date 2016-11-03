@@ -33,7 +33,7 @@ This is less intuitive than it seems, so a few intro notes:
 
 3. Click the "Add map" button and draw in the map where you want it to appear.
 
-![] (https://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/1.gif)
+![] (https://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/general_setup.gif)
 
 4. Sometimes what appears in your print composer doesn't exactly match what you see on your data view. The print composer will always peg what appears in your map to the bottom right-hand corner of what is in your data view. Once you know that, it's just a matter of re-sizing or scaling.
 
