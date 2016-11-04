@@ -62,7 +62,7 @@ We noticed that if you close out of QGIS entirely, then come back to the print c
 
 ##Scale bar
 
-Add the scale bar. There are a lot of ways you can style this using the "Item properties" menu. One downside: unlike ArcGIS, QGIS doesn't allow you to save a scale style, so you have to do this every time. I would appreciate it if someone would develop this feature.
+Add the scale bar. There are a lot of ways you can style this using the "Item properties" menu. ~~One downside: unlike ArcGIS, QGIS doesn't allow you to save a scale style, so you have to do this every time. I would appreciate it if someone would develop this feature.~~ Update: This is now available in v2.16. Thanks to whoever made that possible :)
 
 ![] (https://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/scale2.gif)
 
@@ -80,7 +80,7 @@ There are a couple of blocks with doing a legend in QGIS. If you've got complica
 
 For finishing touches, QGIS can actually do a lot more than you'd expect.
 
-There's a basic shapes-drawing feature (no custom polygons, unfortunately) that allows you to add effects like drop shadow, inner glow, etc:
+There's a basic shapes-drawing feature ~~(no custom polygons, unfortunately)~~ (Update: custom polygons are here! Time to update my version of Q) that allows you to add effects like drop shadow, inner glow, etc:
 
 ![] (https://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/title.gif)
 
