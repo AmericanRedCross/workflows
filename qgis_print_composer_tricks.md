@@ -2,7 +2,7 @@
 
 We at the American Red Cross are committed to using (and improving) open source software whenever possible. We love QGIS, but the print composer can be pretty frustrating at first. After bashing our heads against the keyboard, we've come up with these tips and tricks to guide our new staff through the process.
 
-First, set up your map in QGIS and make it look nice. We've got a couple of other workflows that document [getting OSM data into a spatialite database] (httpss://github.com/AmericanRedCross/workflows/blob/master/converting_pbf_into_spatialite.md) and our [QGIS style files] (httpss://github.com/AmericanRedCross/qgis-styles) are available here. We started with some of Anita Graser's styles and modified them for our typical map needs, adding in vector icons and other stuff. The vector files are included in the download but will probably need to be re-linked if you're using them.
+First, set up your map in QGIS and make it look nice. We've got a couple of other workflows that document [getting OSM data into a spatialite database](https://github.com/AmericanRedCross/workflows/blob/master/converting_pbf_into_spatialite.md) and our [QGIS style files](https://github.com/AmericanRedCross/qgis-styles) are available here. We started with some of [Anita Graser's styles and tips](https://anitagraser.com/2014/05/31/a-guide-to-googlemaps-like-maps-with-osm-in-qgis/) and modified them for our typical map needs, adding in vector icons and other stuff. The vector files are included in the download but will probably need to be re-linked if you're using them.
 
 ## Getting started with the interface
 
