@@ -22,7 +22,7 @@ This is less intuitive than it seems, so a few intro notes:
 
 5. (Pink) The print composer, like the map itself, works with layers. Use this menu for selecting the item you want to work with and for changing the order of items.
 
-6. (Green) There's also an atlas creation tool - more on that on [this workflow page] (httpss://github.com/AmericanRedCross/workflows/blob/master/qgis-atlas-techniques.md).
+6. (Green) There's also an atlas creation tool - more on that on [this workflow page](https://github.com/AmericanRedCross/workflows/blob/master/qgis-atlas-techniques.md).
 
 
 ## Getting the map on the page
@@ -74,7 +74,7 @@ The same is true for the legend - you can do a lot of modifications to the defau
 
 There are a couple of useful features in here, like being able to turn off the auto-updating layers, and being able to lock certain aspects.
 
-There are a couple of blocks with doing a legen in QGIS. If you've got complicated symbology (like a vector symbol inside of a polygon), then the sizing will be weird - the vector will probably be way too big for the polygon in the legend. You can't just make everything in the legend bigger, convert to graphics (because this isn't a feature in QGIS), and resize. You could get around this by going back into the map and resizing your vector fills (and then save the style so you don't have to do it again) but even then, I had issues where some vectors were offset just a little bit in the legend, for no apparent reason (I double checked everything):
+There are a couple of blocks with doing a legend in QGIS. If you've got complicated symbology (like a vector symbol inside of a polygon), then the sizing will be weird - the vector will probably be way too big for the polygon in the legend. You can't just make everything in the legend bigger, convert to graphics (because this isn't a feature in QGIS), and resize. You could get around this by going back into the map and resizing your vector fills (and then save the style so you don't have to do it again) but even then, I had issues where some vectors were offset just a little bit in the legend, for no apparent reason (I double checked everything).
 
 ##Titles and drawing elements
 
