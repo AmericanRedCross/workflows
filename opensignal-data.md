@@ -19,7 +19,7 @@ OpenSignal generated three types of CSV files: wifi, speedtests, and cell signal
 
  Since we only care about the cell signal strength, I put all these into a folder and then ran a quick command in Terminal to merge them:
 
- `cd [folder with .csv files]
+ `cd [folder with .csv files]<br>
   cat *.csv > merged.csv`
 
 The resulting file was a little strange. First, the individual files didn't have consistent header rows - some exports had considerably more columns, and the columns didn't match up between the different formats; the Samsung and Blu phones exported very different formats. I split the files by phone type (Samsung vs Blu) and concatenated the two batches separately, then combined them and made the columns line up. This worked out.
