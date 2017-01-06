@@ -15,7 +15,7 @@ We loaded OpenSignal onto all of the phones before the fieldwork began, then dow
 
 OpenSignal generated three types of CSV files: wifi, speedtests, and cell signals:
 
-![] (https://arcmaps.s3.amazonaws.com/share/file_types.png)
+![] (https://arcmaps.s3.amazonaws.com/share/blog-pictures/file_types.png)
 
  Since we only care about the cell signal strength, I put all these into a folder and then ran a quick command in Terminal to merge them:
 
@@ -74,14 +74,22 @@ I loaded the CSV file into GIS and converted it into an equal-area projection (t
 
 Again, the data look very sparse compared to the amount of volunteers and time spent in the field. The image below shows the OpenSignal data overlaid on GPX tracks collected by volunteers (shown in grey) for the West African region. The OpenSignal data covers some main highways across the region and some clusters in certain cities, but it's extremely sparse compared to what I was expecting.
 
-![] (https://arcmaps.s3.amazonaws.com/share/signal_strength.png)
+![] (https://arcmaps.s3.amazonaws.com/share/blog-pictures/signal_strength.png)
 
 The settings on the OpenSignal app explain, "Data is collected when the app is open and at a low rate when it is closed (around 10 signal readings per hour)."
 
 That's not what I see in the West Africa data. The snippet below contains data from a few different files. In each of these files, a phone collects data briefly when set up in late March... then nothing until a month later, at the end of April. When the phones are logging data, they are doing so at the expected rate of about 10x per hour... it's just that there are huge gaps between the readings. I'd love to know more about why this is and if there is something we can correct, or if it's a bug that can (or has) been fixed.
 
-![] (https://arcmaps.s3.amazonaws.com/share/timestamps.png)
+![] (https://arcmaps.s3.amazonaws.com/share/blog-pictures/timestamps.png)
 
 ## Next steps
 
-Next steps for the data involve turning the OpenSignal data into a raster grid for the area (where we have data) and then intersecting population data from WorldPop to examine populations and areas with access to cell connectivity. There isn't enough data to do this comprehensively for the region, as we'd hoped, but we'll look into analyzing more local areas where the dataset is larger.
+Next steps for the data involve turning the OpenSignal data into a raster (ie pixellated) grid that covers the area, turning it into a full-coverage surface rather than a collection of points. There isn't enough data to do this comprehensively for the region, as we'd hoped, but we can analyze local areas where the dataset is larger.
+
+To do this, we zoomed in to an area in the Eastern Province of Sierra Leone with a high density of signal recordings. We took the RSSI values for these recordings and then performed [kriging](http://www.qgistutorials.com/en/docs/interpolating_point_data.html) using the inverse distance weighting method. What this means: we have a set of points and we want to fill in the gaps between them to predict what the cell signal strength will be in other areas nearby. When doing this, we set a distance limit on how far away the kriging will examine. Too small, and we won't learn that much. Too large, and the results won't be very accurate. Even with an appropriate distance limit, predictions won't be perfect because we aren't factoring in topography or other things that might affect signal strength. But this is still enough to help understand the gaps in the data for a local area. The output from the kriging is a grid of cells, each of which has a predicted RSSI value. This helps us to understand connectivity "hotspots" in the local area.
+
+![] (https://arcmaps.s3.amazonaws.com/share/blog-pictures/kriging.png)
+
+Distributing maps like these would be helpful for local Red Cross volunteers and community members in general, who often end up traveling between cities in order to make a phone call.
+
+These data could be combined with population datasets like [WorldPop](http://www.worldpop.org.uk/) to examine populations groups with (and without) access to cell connectivity.
