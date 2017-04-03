@@ -119,13 +119,13 @@ And there's the text feature:
 
 ![](https://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/text.gif)
 
-##Output
+## Output
 
 Save the print composer and export your map as a PNG or a PDF. Don't export it an SVG; you won't be happy.
 
 ![](https://arcmaps.s3.amazonaws.com/Training%20Materials/QGIS_workflow_images_gifs/save.gif)
 
-##The End
+## The End
 
 From all of these tools, we've been able to make some pretty nice-looking maps with just QGIS:
 
