@@ -20,10 +20,14 @@ The basic steps are to:
 
 	- here they'll be roughly 122.032185,11.396067,122.081280,11.440320. keep those handy somewhere.
 		
-2. Next, you'll need to install tl, linked above. With tl installed globally (i.e nmp install -g) use the following command. Here file names are made to represent Culasi, the place we want. Some imagery service represents some imagery service we want to get imagery from.
+2. Next, you'll need to globally install (the `-g` flag) [tl](https://github.com/mojodna/tl) and some dependencies. The version of node can be finicky but we've gotten it to work with `v0.10.36`. 
+	```
+	npm install -g tl mbtiles tilelive-http
+	```
+3. After installation completes you should be able to use the following command.
 
 	```
-	tl copy mbtiles://./culasi.mbtiles "some.imagery.service/{z}/{x}/{y}.png"
+	tl copy -z 18 -Z 18 -b '{{lng-min}} {{lat-min}} {{lng-max}} {{lat-max}}' 'http://some.imagery.service/{z}/{x}/{y}.png' mbtiles://./{{myFileName}}.mbtiles
 	
 	``` 
 
