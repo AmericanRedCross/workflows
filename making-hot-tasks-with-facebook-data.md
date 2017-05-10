@@ -1,11 +1,11 @@
 
 1. Add imagery service to geojson.io
 
-![findDrawImagery](https://arcmaps.s3.amazonaws.com/share/tasksWalkthrough/findDrawImagery.gif)
+![addService](https://arcmaps.s3.amazonaws.com/share/tasksWalkthrough/addService.gif)
 
 2. Create outline of imagery extent at geojson.io. Save
 
-![addService](https://arcmaps.s3.amazonaws.com/share/tasksWalkthrough/addService.gif)
+![findDrawImagery](https://arcmaps.s3.amazonaws.com/share/tasksWalkthrough/findDrawImagery.gif)
 
 3. Bring imagery extent into QGIS.
 4. Add Facebook data into QGIS. For what we are doing, the values of the data are not importnant. We're using the presence of popupulation to drive where the tasks should be.
