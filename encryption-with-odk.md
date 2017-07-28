@@ -57,6 +57,6 @@ On omkserver, encrypted data will be a random string of text. You have to downlo
 3. Under the "Export" tab, select the form, the export type, the export directory, and the PEM private key file to use for decryption. This will give you a directory with results and attachments.
 
 <figure>
-<img src="https://arcmaps.s3.amazonaws.com/share/blog-pictures/odk-encryption-pic4.jpg" alt="Add public key to ODK XLS form">
+<img src="https://arcmaps.s3.amazonaws.com/share/blog-pictures/odk-encryption-pic5.jpg" alt="Add public key to ODK XLS form">
 <p class="caption">Add public key to ODK XLS form</p>
 </figure>
