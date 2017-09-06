@@ -1,3 +1,5 @@
+# Please see http://posm.io/ for up-to-date documentation.
+------
 ## OpenMapKit (OMK)
 https://github.com/americanredcross/openmapkit/wiki
 
