@@ -3,6 +3,10 @@ Encrypted data collection using ODK Briefcase
 
 As part of our commitment to responsible data management, the American Red Cross uses encryption when collecting sensitive information using mobile data collection. We do this using ODK Briefcase. The online instructions are a little tricky to follow, so here's a guide to setting this up. We use omkserver on [POSM](www.posm.io) but these instructions will cover 90% of the content for a different server situation.
 
+## Setup for Windows
+
+Link is [here](http://support.kobotoolbox.org/customer/portal/articles/1948428-encrypting-forms)
+
 ## Setup for MacOS
 
 1. Download [ODK Briefcase](https://opendatakit.org/use/briefcase/). The application is a `.jar` file. Put this somewhere handy.
@@ -36,10 +40,10 @@ Creating an encrypted form is just like creating a regular ODK form, except that
 To create a public and private key pair:
 
 1. Open Terminal and navigate to the folder where you want the keys to live. I put these in the same directory as where my survey form and results will go.
-2. Create a private key using the command `openssl genrsa -out NameOfKey_private.pem 2048`
-3. Use the private key you just created in order to create a public key. Use the command `openssl genrsa -in NameOfKey_private.pem -inform PEM -out NameOfKey_public.pem -outform PEM -pubout`
+2. Create a private key using the command `openssl genrsa -out NameOfKey_private.pem 2048`. You may get a note saying, `unable to write 'random state'` but the pem should still be created. If you get an error message, you may need to add `sudo` to the beginning of this command.
+3. Use the private key you just created in order to create a public key. Use the command `openssl rsa -in NameOfKey_private.pem -inform PEM -out NameOfKey_public.pem -outform PEM -pubout`
 4. Navigate to the public key you just created. Open it in a text editor and copy the text.
-5. In your XLS form, go to the `Settings` tab. If you don't already have a Settings tab, then create one. You need to have a column titled `public_key`. Paste the text from your public key file into this column. You can then use the XLS form to create your ODK survey and load it onto mobile devices.
+5. In your XLS form, go to the `Settings` tab. If you don't already have a Settings tab, then create one. You need to have a column titled `public_key`. Paste the text from your public key file into this column. You can then use the XLS form to create your ODK survey and load it onto mobile devices. In Excel, you'll need to make sure there are no line breaks in the text containing the key (it should be a continous stream of text, not split across 8 lines)
 
 <figure>
 <img src="https://arcmaps.s3.amazonaws.com/share/blog-pictures/odk-encryption-pic4.jpg" alt="Add public key to ODK XLS form">
