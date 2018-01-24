@@ -48,8 +48,10 @@ https://github.com/americanredcross/openmapkit/wiki
   - you can also manually place the survey file(s) on the phone, from ONA go the survey page and download the XForm version and place it in the `odk/forms` folder on the phone
 
 ### Generating mbtiles for offline basemap in OMK
-- install [node](https://nodejs.org/)
-  - install the following packages tl, mbtiles, tilelive-http
+- install [node](https://nodejs.org/) using [nvm](https://github.com/creationix/nvm#install-script)
+  - `nvm install 7.3.0`
+  - `nvm use 7.3.0` (may work with newer versions of node, but it worked for me with this version)
+- install the following packages tl, mbtiles, tilelive-http
   - `npm install -g tl mbtiles tilelive-http`
 - go to http://bboxfinder.com/ and box your area
   - it should return your coordinates in the following order: lng-min, lat-min, lng-max, lat-max
