@@ -16,7 +16,7 @@ ODK Sync Endpoint is a Docker container that implements the ODK 2.0 sync protoco
 ODK Sync Endpoint does not store user information in its own database, instead it integrates with a LDAP directory or an Active Directory. That directory is then used to authenticate users and obtain user roles.
 
 **NOTE**: As a consequence of the integration, Basic Authentication is the only supported authentication method.
-**PREREQUISITES**: You must have Docker 17.06.1 or newer, and be running in Swarm Mode.
+**PREREQUISITES**: You must have **Docker 17.06.1** or newer, and be running in **Swarm Mode**.
 
 
 
@@ -33,7 +33,7 @@ ODK Sync Endpoint does not store user information in its own database, instead i
 ## ODK Sync Endpoint - Setup in Detail
 
 ### Preparing the host (AWS EC2 Instance)
-We are going to use AWS EC2 service to create the cloud host and setup our ODK 2.0 Sync Endpoint.
+We use AWS EC2 service to create the cloud host and setup our ODK 2.0 Sync Endpoint.
 
 
 ### 1. Install Docker
