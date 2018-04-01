@@ -1,8 +1,12 @@
-## Welcome to ODK 2.0 
+## ODK 2.0
 
-You can use the [editor on GitHub](https://github.com/rajsingh8220/Test/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+There are five mobile tools used to create customizable mobile data management applications. The five ODK mobile ‘apps’ that comprise the framework are Services, Survey, Tables, Scan, Sensors, and Submit.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+There are currently two options for Cloud Endpoints to communicate with ODK 2 tools (Mobile and Desktop Apps).
+
+    1. [ODK Sync Endpoints](http://opendatakit-dev.cs.washington.edu/2_0_tools/release/218/cloud_endpoints#1-Sync-Endpoint) - Supports the full ODK 2.0 REST Protocol
+    2. [ODK Aggregate 1.4.15 Tables Extension](http://opendatakit-dev.cs.washington.edu/2_0_tools/release/218/cloud_endpoints#2-Aggregate) - Supports the majority of the ODK 2.0 REST Protocol; however, is missing group permission filtering support.
+
 
 ### Markdown
 
