@@ -4,8 +4,8 @@ There are five mobile tools used to create customizable mobile data management a
 
 There are currently two options for Cloud Endpoints to communicate with ODK 2 tools (Mobile and Desktop Apps).
 
-    1. [ODK Sync Endpoints](http://opendatakit-dev.cs.washington.edu/2_0_tools/release/218/cloud_endpoints#1-Sync-Endpoint) - Supports the full ODK 2.0 REST Protocol
-    2. [ODK Aggregate 1.4.15 Tables Extension](http://opendatakit-dev.cs.washington.edu/2_0_tools/release/218/cloud_endpoints#2-Aggregate) - Supports the majority of the ODK 2.0 REST Protocol; however, is missing group permission filtering support.
+1. [ODK Sync Endpoints](http://opendatakit-dev.cs.washington.edu/2_0_tools/release/218/cloud_endpoints#1-Sync-Endpoint) - Supports the full ODK 2.0 REST Protocol
+2. [ODK Aggregate 1.4.15 Tables Extension](http://opendatakit-dev.cs.washington.edu/2_0_tools/release/218/cloud_endpoints#2-Aggregate) - Supports the majority of the ODK 2.0 REST Protocol; however, is missing group permission filtering support.
 
 
 ### Markdown
