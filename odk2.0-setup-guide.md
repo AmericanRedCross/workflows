@@ -42,9 +42,7 @@ Create EC2 instance of type t2.small or higher. In our case we use Ubuntu EC2 in
 - Click on Review and Launch
 
 ### 1. Install Docker
-
 #### Set up the repository
-
 Update the apt package index:
 ```
 $ sudo apt-get update
@@ -93,9 +91,15 @@ Install the latest version of Docker CE, or go to the next step to install a spe
 $ sudo apt-get install docker-ce
 ```
 
+#### Run Docker in Swarm Mode
+```
+#docker swarm init --advertise-addr <MANAGER-IP> //IP of the localhost, in this case Elastic IP (Public IP)
+```
 
 
-Install docker 
+
+
+
 
 ### 2. Clone 
 sdlksjdf
