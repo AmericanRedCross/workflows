@@ -34,7 +34,12 @@ ODK Sync Endpoint does not store user information in its own database, instead i
 
 ### Preparing the host (AWS EC2 Instance)
 We use AWS EC2 service to create the cloud host and setup our ODK 2.0 Sync Endpoint.
-
+Create EC2 instance of type t2.small or higher. In our case we use Ubuntu EC2 instance of type t2.large
+- Login to AWS Console
+- Click on Launch instance
+- Select `Ubuntu Server 16.04 LTS (HVM), SSD Volume Type`
+- Select Type: t2.large (CUPs:2 and Memory: 8 GiB)
+- Click on Review and Launch
 
 ### 1. Install Docker
 
