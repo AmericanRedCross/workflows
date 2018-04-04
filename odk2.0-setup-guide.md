@@ -101,15 +101,23 @@ $ sudo apt-get install docker-ce
 
 
 
-### 2. Clone 
-sdlksjdf
+### 2. Clone sync-endpoint-default-setup
+```
+git clone https://github.com/opendatakit/sync-endpoint-default-setup
+```
 
 ### 3. Pull and build the packages
-sdfsdllsdj
+```
+docker build --pull -t odk/sync_endpoint https://github.com/opendatakit/sync-endpoint-containers.git
+docker build --pull -t odk/sync-web-ui https://github.com/opendatakit/sync-endpoint-web-ui.git
+```
 
-### 
-
-
+### In the cloned repository (sync-endpoint-default-setup), Run following build commands
+```
+docker build --pull -t odk/db-bootstrap db-bootstrap
+docker build --pull -t odk/openldap openldap
+docker build --pull -t odk/phpldapadmin phpldapadmin
+```
 
 ```markdown
 Syntax highlighted code block
