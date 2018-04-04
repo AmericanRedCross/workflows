@@ -120,3 +120,8 @@ docker build --pull -t odk/phpldapadmin phpldapadmin
 ```
 
 After successful installation, Visit the link for configuring and creating users on [ODK Cloud Endpoints](https://docs.opendatakit.org/odk2/cloud-endpoints-intro/).
+
+
+
+
+[ODK 2.0 Getting Started Guide](https://docs.opendatakit.org/odk2/getting-started-2/)
