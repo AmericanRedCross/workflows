@@ -1,6 +1,6 @@
-#Missing Maps People Count Walkthrough
+## Missing Maps People Count Walkthrough
 
-##Getting the data
+### Getting the data
 
 1. Use the [HOT Tasking Manager](http://tasks.hotosm.org) to update csv - mm_tasks_mmm20yy.csv 
 	update task number, task URL, % complete, title, and the date which you updated
@@ -31,7 +31,7 @@
 
 4. Download 2015 [WorldPop](http://www.worldpop.org.uk/data/) data for each country that has a task. 
 
-##QGIS Preprocessing
+### QGIS Preprocessing
 
 5. Create a new map document. Before adding any data, set the CRS to World_Eckert_IV EPSG: 54012. This is an Equal Area Projection, that we will use to calculate later, the area mapped.
 
@@ -70,7 +70,7 @@
 
 	![alt text](https://arcmaps.s3.amazonaws.com/share/people_count/screenshots/add_zonalstats.png)
 
-##Getting the Count
+### Getting the Count
 
 12. Now you've removed duplicate tasks, and projected all of your data sets, you're ready to run Zonal Stats for each of your countries. 
 
